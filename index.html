@@ -1,43 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Landing page lamborghini</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Lamborghini
+                </a>
 
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__link">Models</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Brand</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Store</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Experience</a></li>
+                    </ul>
+                </div>
 
-</head>
-<body>
-    
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Faça seu login<br>E entre para o nosso time</h1>
-            <img src="./assets/astronauta.svg" class="left-login-img" alt="Animação em 2D de uma astronauta em um traje verde flutuando entre estrelas e luas">
-        </div>
-        <div class="right-login">
-            <div class="card-login">
-                <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Digite seu usuário">
+                <div class="nav__toggle" id="nav__toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
-                <div class="textfield"> 
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite a sua senha">
+            </nav>
+        </header>
+
+        <main class="main container">
+            <div class="home grid">
+                <h1 class="home__title">LAMBORGHINI</h1>
+
+                <div class="home__img">
+                    <img src="assets/img/lamborghini.png" alt="">
                 </div>
-                <button class="btn-login">LOGIN</button>
+
+                <div class="home__information">
+                    <h2 class="home__subtitle">LAMBORGHINI<br>GALLARDO LP560</h2>
+                    <p class="home__description">Lorem ipsum dolor sit amet consect  adipiscing elit, commodo tristique id quisque lobortis facilisi feugiat</p>
+                </div>
+
+                <div class="box">
+                    <div class="box__content box__medium">
+                        <ion-icon name="speedometer-outline" class="icon-box"></ion-icon>
+                        <h3 class="box__medium-title inline">3.7</h3>
+                        <span class="box__medium-description block">Sec.</span>
+                        <span class="box__medium-detail">0-100 km/h</span>
+                    </div>
+
+                    <div>
+                        <div class="box__content box__small">
+                            <ion-icon name="trending-up-outline" class="icon-box icon-box--small"></ion-icon>
+                            <h3 class="box__small-title inline">325</h3>
+                            <span class="box__small-description block">km/h</span>
+                            <span class="box__small-detail">Top Speed</span>
+                        </div>
+                        <div class="box__content box__small">
+                            <ion-icon name="car-sport-outline" class="icon-box icon-box--small"></ion-icon>
+                            <h3 class="box__small-title inline">8.000</h3>
+                            <span class="box__small-description block">r.p.m</span>
+                            <span class="box__small-detail">Power</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </main>
 
-        </div>
+        <!-- ICONOS -->
+        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 
-    </div>
-
-
-
-</body>
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
